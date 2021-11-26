@@ -3,7 +3,7 @@
 ![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=0xvpr&layout=compact&theme=prussian&langs_count=6)
 
 ### Stack
-![C++](https://img.shields.io/badge/-C%2B%2B%2020-%2300599C?style=plastic&logo=cplusplus)
 ![C](https://img.shields.io/badge/-C%2099-%2300599C?style=plastic&logo=c)
-![Python](https://img.shields.io/badge/-Python-%2300599C?style=plastic&logo=python)
+![Python](https://img.shields.io/badge/-Python%203-%2300599C?style=plastic&logo=python)
+![C++](https://img.shields.io/badge/-C%2B%2B%2020-%2300599C?style=plastic&logo=cplusplus)
 ![C#](https://img.shields.io/badge/-C%23-%2300599C?style=plastic&logo=csharp)
