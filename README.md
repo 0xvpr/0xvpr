@@ -6,4 +6,5 @@
 ![C++](https://img.shields.io/badge/-C%2B%2B%2020-%2300599C?style=plastic&logo=cplusplus)
 ![C](https://img.shields.io/badge/-C%2099-%2300599C?style=plastic&logo=c)
 ![Python](https://img.shields.io/badge/-Python-%2300599C?style=plastic&logo=python)
+![Haskell](https://img.shields.io/badge/-Haskell-%2300599C?style=plastic&logo=haskell)
 ![C#](https://img.shields.io/badge/-C%23-%2300599C?style=plastic&logo=csharp)
