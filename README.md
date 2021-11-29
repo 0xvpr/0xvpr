@@ -5,7 +5,7 @@
 ### Stack
 ![C](https://img.shields.io/badge/C-%2300599C?style=plastic&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-%2300599C?style=plastic&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-%2300599C?style=plastic&logo=cplusplus)
+![C++](https://img.shields.io/badge/C%2B%2B-%23008C59?style=plastic&logo=cplusplus)
 ![Bash](https://img.shields.io/badge/Bash-%23008C59?style=plastic&logo=gnu-bash&logoColor=white)
 ![Haskell](https://img.shields.io/badge/Haskell-%23008C59?style=plastic&logo=haskell)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%238C599C?style=plastic&logo=javascript&logoColor=white)
