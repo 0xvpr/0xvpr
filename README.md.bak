@@ -4,11 +4,7 @@
 
 ### Stack
 ![C](https://img.shields.io/badge/-C%2099-%2300599C?style=plastic&logo=c)
-<<<<<<< HEAD
 ![Python](https://img.shields.io/badge/-Python-%2300599C?style=plastic&logo=python)
 ![Haskell](https://img.shields.io/badge/-Haskell-%2300599C?style=plastic&logo=haskell)
-=======
-![Python](https://img.shields.io/badge/-Python%203-%2300599C?style=plastic&logo=python)
 ![C++](https://img.shields.io/badge/-C%2B%2B%2020-%2300599C?style=plastic&logo=cplusplus)
->>>>>>> 300abc5ae5f53ce2b044c5875664ecd056735725
 ![C#](https://img.shields.io/badge/-C%23-%2300599C?style=plastic&logo=csharp)
