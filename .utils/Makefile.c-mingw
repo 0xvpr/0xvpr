@@ -1,0 +1,35 @@
+PROJECT  = project-name
+
+CC       = x86_64-w64-mingw32-gcc
+CCFLAGS  = -std=c++2a -O2 -g -pedantic -Wall -Wextra -Werror
+
+LD       = x86_64-w64-mingw32-gcc
+LDFLAGS  =
+
+BIN      = bin
+SRC      = src
+OBJ      = build
+BUILD    = $(OBJ)
+SOURCES  = $(wildcard $(SRC)/*.c)
+OBJECTS  = $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SOURCES))
+
+INCLUDE  = include
+INCLUDES = $(addprefix -I,$(INCLUDE))
+
+all: $(PROJECT)
+
+$(PROJECT): $(BIN) $(BUILD) $(OBJECTS) 
+	$(LD) $(OBJECTS) $(LDFLAGS) -o $(BIN)/$(PROJECT)
+
+$(OBJECTS): $(OBJ)/%.o : $(SRC)/%.c
+	$(CC) $(CCFLAGS) $(INCLUDES) -c $^ -o $@
+
+$(BIN):
+	mkdir -p $@
+
+$(BUILD):
+	mkdir -p $@
+
+clean:
+	rm -fr bin/*
+	rm -fr build/*

@@ -1,0 +1,13 @@
+# Compiled files
+*.a
+*.o
+*.so
+*.exe
+*.dll
+*.lib
+*.obj
+*.out
+
+# Folders
+.vim/bundle
+.vim/autoload

@@ -1,0 +1,6 @@
+-std=c99
+-Iinclude
+-Wall
+-Wextra
+-fms-compatibility
+-fms-extensions
