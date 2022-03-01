@@ -14,12 +14,14 @@ then
     mv ~/.vimrc ~/.vimrc.bak
 fi
 
-mkdir -p ~/.config
+# Initialize ~/.vim
+cp config/.vim ~/.vim -r
+cp config/.vimrc ~/.vimrc
 mkdir -p ~/.vim/bundle/
 
-cp config/.vimrc ~/.vimrc
+# Add and link nvim config to ~/.vimrc
+mkdir -p ~/.config
 cp config/nvim ~/.config -r
-cp .vim ~/.vim -r
 
 # Install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
