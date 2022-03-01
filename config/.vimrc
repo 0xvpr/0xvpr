@@ -1,6 +1,6 @@
 " Creator: VPR
-" Created: April 20, 2020
-" Updated: November 15, 2021
+" Created: April 20th, 2020
+" Updated: March 1st, 2022
 
 " Interpreter
 :let g:python3_host_prog='/usr/bin/env python3'
@@ -23,7 +23,6 @@
 " Settings
 :set backspace=indent,eol,start
 :set clipboard=unnamedplus
-:set colorcolumn=80
 :set encoding=utf-8
 :set showtabline=2
 :set softtabstop=4
