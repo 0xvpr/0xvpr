@@ -14,7 +14,7 @@ then
     mv ~/.vimrc ~/.vimrc.bak
 fi
 
-cp .vimrc ~/.vimrc
+cp config/.vimrc ~/.vimrc
 cp .vim ~/.vim -r
 
 mkdir -p ~/.vim/bundle/
