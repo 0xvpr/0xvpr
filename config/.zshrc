@@ -1,6 +1,6 @@
 # Creator: VPR
-# Created: April 20, 2020
-# Updated: December 7, 2021
+# Created: April 20th, 2020
+# Updated: March 6th 2022
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -170,6 +170,24 @@ function findall {
     do
         find . -name "*.${arg}"
     done
+}
+
+function mkcpp {
+    mkdir -p Includes Sources Resources Scripts
+    # cp ~/.preset/{CMakeLists.txt, Makefile}
+}
+
+function god {
+    _set_compiler=0
+    _set_flags=0
+
+    if ! [ ${CXX} ]; then _set=1; CXX="g++"; fi
+
+    # if no file return error
+    ${CXX} -std=c++2a -O3 -c -S ${@} ${CFLAGS} -o - -masm=intel | c++filt | grep -vE '\s+\.'
+
+    if [ ${_set_compiler} ]; then unset CXX; fi
+    if [ ${_set_flags} ]; then unset CFLAGS; fi
 }
 
 # Main aliases
