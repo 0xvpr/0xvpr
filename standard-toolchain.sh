@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Creator: VPR
-# Created: December 7th, 2021
-# Updated: March 1st, 2022
+# Creator:    VPR
+# Created:    December 7th, 2021
+# Updated:    June 11th, 2022
 
 set -o pipefail
 set -o errexit
@@ -13,8 +13,12 @@ set -o xtrace
 export TZ=America/Chicago
 ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
 
-apt update && apt upgrade -y
-apt install -y --no-install-recommends \
+# Install a high enough node version for nvim
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
+# Update repositories
+sudo apt update
+sudo apt install -y --no-install-recommends \
     sudo \
     apt-utils \
     zsh \
@@ -38,9 +42,6 @@ apt install -y --no-install-recommends \
     pkg-config \
     gdb \
     gcc \
-    llvm \
-    clang \
-    clangd \
     cmake \
     cscope \
     python2-dev \

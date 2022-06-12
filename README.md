@@ -1,11 +1,12 @@
 ![stats](https://github-readme-stats.vercel.app/api?username=0xvpr&show_icons=true&theme=prussian)
 
-![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=0xvpr&layout=compact&theme=prussian&langs_count=6)
+![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=0xvpr&layout=compact&theme=prussian&langs_count=8)
 
 ### Stack
 ![Python](https://img.shields.io/badge/Python-%2300599C?style=plastic&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-%2300599C?style=plastic&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-%23008C59?style=plastic&logo=cplusplus)
+![C++](https://img.shields.io/badge/C%2B%2B-%2300599C?style=plastic&logo=cplusplus)
+![Rust](https://img.shields.io/badge/Rust-%23008C59?style=plastic&logo=rust&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%23008C59?style=plastic&logo=gnu-bash&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-%238C599C?style=plastic&logo=lua&logoColor=white)
 ![Haskell](https://img.shields.io/badge/Haskell-%238C599C?style=plastic&logo=haskell)

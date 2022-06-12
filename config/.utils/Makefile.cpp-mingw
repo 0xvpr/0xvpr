@@ -1,35 +1,39 @@
 PROJECT  = project-name
 
-CXX      = x86_64-w64-mingw32-g++
+CXX      = x86_64-w64-mingw32-g++-posix
 CXXFLAGS = -std=c++2a -O2 -g -pedantic -Wall -Wextra -Werror
 
-LD       = x86_64-w64-mingw32-g++
-LDFLAGS  =
+LD       = x86_64-w64-mingw32-g++-posix
+LDFLAGS  = -shared
 
-BIN      = bin
-SRC      = src
-OBJ      = build
-BUILD    = $(OBJ)
-SOURCES  = $(wildcard $(SRC)/*.cpp)
-OBJECTS  = $(patsubst $(SRC)/%.cpp, $(OBJ)/%.obj, $(SOURCES))
+LIB      = lib
+SOURCE      = src
+OBJECT      = build
+BUILD    = $(OBJECT)
+SOURCES  = $(wildcard $(SOURCE)/*.cpp)
+OBJECTECTS  = $(patsubst $(SOURCE)/%.cpp, $(OBJECT)/%.obj, $(SOURCES))
 
 INCLUDE  = include
 INCLUDES = $(addprefix -I,$(INCLUDE))
 
 all: $(PROJECT)
 
-$(PROJECT): $(BIN) $(BUILD) $(OBJECTS) 
-	$(LD) $(OBJECTS) $(LDFLAGS) -o $(BIN)/$(PROJECT)
+$(PROJECT): $(LIB) $(BUILD) $(OBJECTECTS) 
+	$(LD) $(OBJECTECTS) $(LDFLAGS) -o $(LIB)/$(PROJECT)
 
-$(OBJECTS): $(OBJ)/%.obj : $(SRC)/%.cpp
+$(OBJECTECTS): $(OBJECT)/%.obj : $(SOURCE)/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $^ -o $@
 
-$(BIN):
+$(LIB):
 	mkdir -p $@
 
 $(BUILD):
 	mkdir -p $@
 
 clean:
-	rm -fr bin/*
+	rm -fr lib/*
 	rm -fr build/*
+
+extra-clean:
+	rm -fr ./lib
+	rm -fr ./build

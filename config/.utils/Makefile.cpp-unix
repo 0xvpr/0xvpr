@@ -7,21 +7,21 @@ LD       = g++
 LDFLAGS  =
 
 BIN      = bin
-SRC      = src
-OBJ      = build
-BUILD    = $(OBJ)
-SOURCES  = $(wildcard $(SRC)/*.cpp)
-OBJECTS  = $(patsubst $(SRC)/%.cpp, $(OBJ)/%.obj, $(SOURCES))
+SOURCE      = src
+OBJECT      = build
+BUILD    = $(OBJECT)
+SOURCES  = $(wildcard $(SOURCE)/*.cpp)
+OBJECTECTS  = $(patsubst $(SOURCE)/%.cpp, $(OBJECT)/%.obj, $(SOURCES))
 
 INCLUDE  = include
 INCLUDES = $(addprefix -I,$(INCLUDE))
 
 all: $(PROJECT)
 
-$(PROJECT): $(BIN) $(BUILD) $(OBJECTS) 
-	$(LD) $(OBJECTS) $(LDFLAGS) -o $(BIN)/$(PROJECT)
+$(PROJECT): $(BIN) $(BUILD) $(OBJECTECTS) 
+	$(LD) $(OBJECTECTS) $(LDFLAGS) -o $(BIN)/$(PROJECT)
 
-$(OBJECTS): $(OBJ)/%.obj : $(SRC)/%.cpp
+$(OBJECTECTS): $(OBJECT)/%.obj : $(SOURCE)/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $^ -o $@
 
 $(BIN):
@@ -31,5 +31,9 @@ $(BUILD):
 	mkdir -p $@
 
 clean:
-	rm -fr bin/*
-	rm -fr build/*
+	rm -fr ./bin/*
+	rm -fr ./build/*
+
+extra-clean:
+	rm -fr ./bin
+	rm -fr ./build

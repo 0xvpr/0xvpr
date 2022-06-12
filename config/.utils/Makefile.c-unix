@@ -4,14 +4,14 @@ CXX      = gcc
 CXXFLAGS = -std=c++2a -O2 -g -pedantic -Wall -Wextra -Werror
 
 LD       = gcc
-LDFLAGS  =
+LDFLAGS  = -shared
 
 BIN      = bin
-SRC      = src
-OBJ      = build
-BUILD    = $(OBJ)
-SOURCES  = $(wildcard $(SRC)/*.c)
-OBJECTS  = $(patsubst $(SRC)/%.c, $(OBJ)/%.o, $(SOURCES))
+SOURCE   = src
+OBJECT   = build
+BUILD    = $(OBJECT)
+SOURCES  = $(wildcard $(SOURCE)/*.c)
+OBJECTS  = $(patsubst $(SOURCE)/%.c, $(OBJECT)/%.o, $(SOURCES))
 
 INCLUDE  = include
 INCLUDES = $(addprefix -I,$(INCLUDE))
@@ -21,7 +21,7 @@ all: $(PROJECT)
 $(PROJECT): $(BIN) $(BUILD) $(OBJECTS) 
 	$(LD) $(OBJECTS) $(LDFLAGS) -o $(BIN)/$(PROJECT)
 
-$(OBJECTS): $(OBJ)/%.o : $(SRC)/%.c
+$(OBJECTS): $(OBJECT)/%.o : $(SOURCE)/%.c
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $^ -o $@
 
 $(BIN):

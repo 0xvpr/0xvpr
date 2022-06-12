@@ -2,5 +2,7 @@
 -Iinclude
 -Wall
 -Wextra
--fms-compatibility
--fms-extensions
+-Werror
+-Wshadow
+-Wpedantic
+-Wconversion
