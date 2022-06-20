@@ -5,9 +5,9 @@
 ### Stack
 ![Python](https://img.shields.io/badge/Python-%2300599C?style=plastic&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-%2300599C?style=plastic&logo=c&logoColor=white)
-![x86_64-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastict&logo=Intel&logoColor=white)
+![x86_64-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastic&logo=Intel&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-%23008C59?style=plastic&logo=cplusplus)
-![ARM-Assembly](https://img.shields.io/badge/ASM-%23008C59?style=plastict&logo=arm&logoColor=white)
+![ARM-Assembly](https://img.shields.io/badge/ASM-%23008C59?style=plastic&logo=arm&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%23008C59?style=plastic&logo=gnu-bash&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-%238C599C?style=plastic&logo=lua&logoColor=white)
 ![Haskell](https://img.shields.io/badge/Haskell-%238C599C?style=plastic&logo=haskell)
