@@ -16,7 +16,7 @@ ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
 
 apt update && apt dist-upgrade && apt upgrade -y
 apt install -y --no-install-recommends \
-    apt-utils
+    apt-utils \
     zsh \
     zsh-autosuggestions \
     file \
