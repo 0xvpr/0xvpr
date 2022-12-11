@@ -5,9 +5,12 @@
 ### Stack
 ![Python](https://img.shields.io/badge/Python-%2300599C?style=plastic&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-%2300599C?style=plastic&logo=c&logoColor=white)
+![x86_64-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastic&logo=Intel&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C?style=plastic&logo=cplusplus)
-![Rust](https://img.shields.io/badge/Rust-%23008C59?style=plastic&logo=rust&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%23008C59?style=plastic&logo=gnu-bash&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-%23008C59?style=plastic&logo=csharp&logoColor=white)
+![ARM-Assembly](https://img.shields.io/badge/ASM-%23008C59?style=plastic&logo=arm&logoColor=white)
+![Go](https://img.shields.io/badge/Go-%238C599C?style=plastic&logo=go&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-%238C599C?style=plastic&logo=lua&logoColor=white)
 ![Haskell](https://img.shields.io/badge/Haskell-%238C599C?style=plastic&logo=haskell)
 ![Java](https://img.shields.io/badge/Java-%238C599C?style=plastic&logo=java&logoColor=white)

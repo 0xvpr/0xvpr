@@ -1,27 +1,27 @@
 PROJECT  = project-name
 
 CXX      = x86_64-w64-mingw32-g++-posix
-CXXFLAGS = -std=c++2a -O2 -g -pedantic -Wall -Wextra -Werror
+CXXFLAGS = -std=c++2a -O2 -Wall -Wextra -Werror -Wshadow -Wpedantic -Wconversion
 
 LD       = x86_64-w64-mingw32-g++-posix
 LDFLAGS  = -shared
 
 LIB      = lib
-SOURCE      = src
-OBJECT      = build
+SOURCE   = src
+OBJECT   = build
 BUILD    = $(OBJECT)
 SOURCES  = $(wildcard $(SOURCE)/*.cpp)
-OBJECTECTS  = $(patsubst $(SOURCE)/%.cpp, $(OBJECT)/%.obj, $(SOURCES))
+OBJECTS  = $(patsubst $(SOURCE)/%.cpp, $(OBJECT)/%.obj, $(SOURCES))
 
 INCLUDE  = include
 INCLUDES = $(addprefix -I,$(INCLUDE))
 
 all: $(PROJECT)
 
-$(PROJECT): $(LIB) $(BUILD) $(OBJECTECTS) 
-	$(LD) $(OBJECTECTS) $(LDFLAGS) -o $(LIB)/$(PROJECT)
+$(PROJECT): $(LIB) $(BUILD) $(OBJECTS) 
+	$(LD) $(OBJECTS) $(LDFLAGS) -o $(LIB)/$(PROJECT)
 
-$(OBJECTECTS): $(OBJECT)/%.obj : $(SOURCE)/%.cpp
+$(OBJECTS): $(OBJECT)/%.obj : $(SOURCE)/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $^ -o $@
 
 $(LIB):

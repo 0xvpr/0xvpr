@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Creator: VPR
-# Created: March 1st, 2022
-# Updated: March 1st, 2022
+# Created By:   VPR
+# Created:      March 1st, 2022
+
+# Updated by:   VPR
+# Updated:      December 10, 2022
 
 # Install oh-my-zsh
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
@@ -13,4 +15,4 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Copy config files
 cp config/.tmux.conf ~/
 cp config/.zshrc ~/
-cp config/.utils ~/
+cp -r config/.utils ~/

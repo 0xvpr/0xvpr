@@ -1,7 +1,7 @@
 PROJECT  = project-name
 
 CXX      = gcc
-CXXFLAGS = -std=c++2a -O2 -g -pedantic -Wall -Wextra -Werror
+CXXFLAGS = -std=c++2a -O2 -Wall -Wextra -Werror -Wshadow -Wpedantic -Wconversion
 
 LD       = gcc
 LDFLAGS  = -shared
