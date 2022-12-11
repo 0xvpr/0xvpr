@@ -12,7 +12,6 @@
 ![ARM-Assembly](https://img.shields.io/badge/ASM-%23008C59?style=plastic&logo=arm&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-%238C599C?style=plastic&logo=go&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-%238C599C?style=plastic&logo=lua&logoColor=white)
-![Haskell](https://img.shields.io/badge/Haskell-%238C599C?style=plastic&logo=haskell)
 ![Java](https://img.shields.io/badge/Java-%238C599C?style=plastic&logo=java&logoColor=white)
 
 ### Legend
