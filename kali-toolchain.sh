@@ -48,7 +48,7 @@ apt install -y --no-install-recommends \
     python3-dev \
     nodejs \
     ruby \
-    yarn 
+    yarnpkg
 
 # If WSL2
 apt install -y --no-install-recommends \
