@@ -1,6 +1,6 @@
 " Creator: VPR
 " Created: April 20th, 2020
-" Updated: March 1st, 2022
+" Updated: June 21st, 2023
 
 " Interpreter
 :let g:python3_host_prog='/usr/bin/env python3'
@@ -17,8 +17,8 @@
 :silent! noremap <Down>  <Nop>
 :silent! noremap <Left>  <Nop>
 :silent! noremap <Up>    <Nop>
-:silent! nnoremap ` gt<CR>
-:silent! nnoremap ~ gT<CR>
+:silent! nnoremap ` bn<CR>
+:silent! nnoremap ~ bp<CR>
 
 " Settings
 :set backspace=indent,eol,start
@@ -35,9 +35,9 @@
 :set tabstop=4
 :set expandtab
 :set wildmenu
+:set nonumber
 :set path+=**
 :set mouse=a
-:set number
 :set secure
 :set hidden
 :set nowrap
@@ -46,8 +46,8 @@
 :set exrc
 
 " Appearance
-:color relaxed
 :syntax enable
+:color relaxed
 
 " Airline theme
 if !exists('g:airline_symbols')
@@ -77,9 +77,14 @@ autocmd filetype css        setlocal tabstop=4 shiftwidth=2 softtabstop=2
 autocmd filetype html       setlocal tabstop=4 shiftwidth=2 softtabstop=2
 autocmd filetype javascript setlocal tabstop=4 shiftwidth=2 softtabstop=2
 
+" Styling -> C/C++ headers
+let g:c_syntax_for_h = 1
+
+" Line Number Toggle
+:silent! nnoremap <F2> :set number!<CR>
+
 " Nerd Tree Toggle
-:silent! nmap     <F2> :NERDTreeToggle<CR>
-:silent! map      <F3> :NERDTreeFind<CR>
+:silent! map      <F3> :execute "set . (&number == "" ? "number" : "nonumber")<CR>
 
 " Color Bar Toggle
 :silent! nnoremap <F4> :execute "set colorcolumn=" . (&colorcolumn == "" ? "80" : "")<CR>
@@ -97,11 +102,6 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
-
-inoremap <silent><expr> <Tab>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<Tab>" :
-  \ coc#refresh()
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
