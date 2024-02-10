@@ -2,13 +2,8 @@
 
 ### Stack
 ![C](https://img.shields.io/badge/C-%2300599C?style=plastic&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-%2300599C?style=plastic&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-%2300599C?style=plastic&logo=cplusplus)
-![x86_64-Assembly](https://img.shields.io/badge/ASM-%23008C59?style=plastic&logo=Intel&logoColor=white)
-![ARM-Assembly](https://img.shields.io/badge/ASM-%238C599C?style=plastic&logo=arm&logoColor=white)
-
-
-### Legend
-![Advanced](https://img.shields.io/badge/-Advanced-%2300599C?style=plastic)
-![Efficient](https://img.shields.io/badge/-Efficient-%23008C59?style=plastic)
-![Competent](https://img.shields.io/badge/-Competent-%238C599C?style=plastic)
+![Rust](https://img.shields.io/badge/rust-%2300599C?style=plastic&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%2300599C?style=plastic&logo=python&logoColor=white)
+![x86_64-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastic&logo=Intel&logoColor=white)
+![ARM-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastic&logo=arm&logoColor=white)
