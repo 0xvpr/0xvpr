@@ -1,4 +1,4 @@
-![stats](https://github-readme-stats.vercel.app/api?username=0xvpr&show_icons=true&theme=prussian) ![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=0xvpr&layout=compact&theme=prussian&langs_count=4)
+![stats](https://github-readme-stats.vercel.app/api?username=0xvpr&show_icons=true&theme=prussian&hide=contribs,issues) ![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=0xvpr&layout=compact&theme=prussian&langs_count=4&size_weight=1&count_weight=1)
 
 ### Stack
 ![C](https://img.shields.io/badge/C-%2300599C?style=plastic&logo=c&logoColor=white)
