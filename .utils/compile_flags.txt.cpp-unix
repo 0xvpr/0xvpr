@@ -1,4 +1,4 @@
--std=c++2a
+-std=c++20
 -Iinclude
 -Wall
 -Wextra

@@ -1,11 +1,9 @@
--std=c++2a
+-std=c++20
 --target=x86_64-pc-windows-gnu
 -isystem/usr/x86_64-w64-mingw32/include
--isystem/usr/lib/gcc/x86_64-w64-mingw32/9.3-win32/include
--isystem/usr/lib/gcc/i686-w64-mingw32/9.3-win32/../../../../i686-w64-mingw32/include
--isystem/usr/lib/gcc/x86_64-w64-mingw32/9.3-posix/include/c++
--isystem/usr/lib/gcc/x86_64-w64-mingw32/9.3-posix/include/c++/x86_64-w64-mingw32
--isystem/usr/lib/gcc/x86_64-w64-mingw32/9.3-posix/include/c++/backward
+-isystem/usr/lib/gcc/x86_64-w64-mingw32/10-posix/include/c++
+-isystem/usr/lib/gcc/x86_64-w64-mingw32/10-posix/include/c++/x86_64-w64-mingw32
+-isystem/usr/lib/gcc/x86_64-w64-mingw32/10-posix/include/c++/backward
 -Iinclude
 -Wall
 -Wextra
@@ -13,4 +11,3 @@
 -Wshadow
 -Wpedantic
 -Wconversion
--Wl,--nostdinc++

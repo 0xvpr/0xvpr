@@ -1,7 +1,7 @@
 PROJECT  = project-name
 
 CXX      = x86_64-w64-mingw32-g++-posix
-CXXFLAGS = -std=c++2a -O2 -Wall -Wextra -Werror -Wshadow -Wpedantic -Wconversion
+CXXFLAGS = -std=c++20 -O2 -Wall -Wextra -Werror -Wshadow -Wpedantic -Wconversion
 
 LD       = x86_64-w64-mingw32-g++-posix
 LDFLAGS  = -shared
