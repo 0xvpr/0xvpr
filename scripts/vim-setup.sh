@@ -4,13 +4,14 @@
 # Created:      December 7th, 2021
 
 # Updated by:   VPR
-# Updated:      December 10th, 2022
+# Updated:      May 2nd, 2024
 
 
 set -o pipefail
 set -o errexit
 set -o nounset
 set -o xtrace
+
 
 (
     # Set script directory as cwd
@@ -19,13 +20,14 @@ set -o xtrace
     # Make a copy of the old vimrc with timestamp
     if [ -f ~/.vimrc ]
     then
-        mv ~/.vimrc ~/.vimrc_`date '+%Y-%m-%d_%H-%M-%S'`
+        cp ~/.vimrc ~/.vimrc_`date '+%Y-%m-%d_%H-%M-%S'`
     fi
 
     # Initialize ~/.vim
-    cp ./config/.vim ~/.vim -r
-    ln -s $PWD/.vimrc ~/.vimrc
-    mkdir -p ~/.vim/bundle/
+    if [ -d ~/.vim ]
+    then
+        cp ~/.vim ~/.vim_`date '+%Y-%m-%d_%H-%M-%S'`
+    fi
 
     # Add and link nvim config to ~/.vimrc
     mkdir -p ~/.config

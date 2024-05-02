@@ -13,6 +13,4 @@
 -Wshadow
 -Wpedantic
 -Wconversion
--fms-compatibility
--fms-extensions
 -Wl,--nostdinc++

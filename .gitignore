@@ -1,13 +1,52 @@
-# Compiled files
-*.a
-*.o
-*.so
-*.exe
-*.dll
-*.lib
-*.obj
-*.out
+# Ignore everything
+*
 
-# Folders
-.vim/bundle
-.vim/autoload
+# Except...
+
+# Repo config
+!.gitignore
+!.gitmodules
+!README.md
+
+# Shell / Tmux config
+!.bashrc
+!.profile
+!.tmux.conf
+!.vimrc
+!.zshrc
+!.zshrc.minimal
+
+# Utilities
+!.utils/Makefile.c-mingw
+!.utils/Makefile.c-unix
+!.utils/Makefile.cpp-mingw
+!.utils/Makefile.cpp-unix
+!.utils/compile_flags.txt.c-mingw
+!.utils/compile_flags.txt.c-mingw-driver
+!.utils/compile_flags.txt.c-unix
+!.utils/compile_flags.txt.cpp-mingw
+!.utils/compile_flags.txt.cpp-unix
+!.utils/wsl2-sshd.ps1
+
+# Vim
+!.config/nvim/init.vim
+!.vim/after/syntax/c/aethetics.vim
+!.vim/after/syntax/c/highlight_functions.vim
+!.vim/after/syntax/cpp/aethetics.vim
+!.vim/after/syntax/cpp/highlight_functions.vim
+!.vim/autoload/pathogen.vim
+!.vim/bundle/coc.nvim
+!.vim/bundle/nerdcommenter
+!.vim/bundle/nerdtree
+!.vim/bundle/vim-airline
+!.vim/bundle/vim-airline-themes
+!.vim/coc-settings.json
+!.vim/colors/cooler.vim
+!.vim/colors/relaxed.vim
+
+# Setup scripts
+!scripts/arch-toolchain.sh
+!scripts/kali-toolchain.sh
+!scripts/profile-setup.sh
+!scripts/standard-toolchain.sh
+!scripts/vim-setup.sh

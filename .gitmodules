@@ -1,0 +1,12 @@
+[submodule "/home/vpr/.vim/bundle/nerdcommenter"]
+	path = /home/vpr/.vim/bundle/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter
+[submodule "/home/vpr/.vim/bundle/nerdtree"]
+	path = /home/vpr/.vim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "/home/vpr/.vim/bundle/vim-airline"]
+	path = /home/vpr/.vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "/home/vpr/.vim/bundle/vim-airline-themes"]
+	path = /home/vpr/.vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes

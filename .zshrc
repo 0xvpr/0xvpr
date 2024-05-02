@@ -195,12 +195,12 @@ alias z="zsh"
 alias t="tmux"
 alias c="clear"
 alias vim="nvim"
+alias vi="/usr/bin/vim -u ~/.naked_vimrc"
 
 # WSL aliases
 alias f="explorer.exe"
 alias PS="powershell.exe"
 alias clip="clip.exe"
-alias cmake="cmake.exe"
 alias wpip="pip.exe"
 alias wpython="python.exe"
 
@@ -211,3 +211,7 @@ alias lh="ls --color --group-directories-first -lhA"
 
 # Vi key bindings in terminal
 set -o vi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
