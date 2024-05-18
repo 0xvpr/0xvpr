@@ -1,4 +1,4 @@
-" Creator:  Malik R. Booker
+" Creator:  VPR
 " Modified: November 19, 2021
 
 set background=dark

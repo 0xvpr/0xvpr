@@ -146,14 +146,14 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/.anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('$HOME/.anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "${HOME}/.anaconda3/etc/profile.d/conda.sh" ]; then
-        . "${HOME}/.anaconda3/etc/profile.d/conda.sh"
+    if [ -f "${HOME}/.anaconda/etc/profile.d/conda.sh" ]; then
+        . "${HOME}/.anaconda/etc/profile.d/conda.sh"
     else
-        export PATH="${HOME}/.anaconda3/bin:$PATH"
+        export PATH="${HOME}/.anaconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -172,19 +172,29 @@ function findall {
     done
 }
 
-function mkcpp {
-    mkdir -p Includes Sources Resources Scripts
+#function mkcpp {
+    #mkdir -p Includes Sources Resources Scripts
     # cp ~/.preset/{CMakeLists.txt, Makefile}
+#}
+
+function mkcw {
+    mkdir -p "$@"
+    cd "$@"
+    cp ~/.utils/Makefile.c-mingw makefile
+    cp ~/.utils/compile_flags.txt.c-mingw compile_flags.txt
+#   cp ~/.utils/Dockerfile.mingw32.ubuntu Dockerfile
+    mkdir -p src include
+    touch REAMDE.md CONTRIB.md src/main.c
 }
 
-function god {
+function godbolt {
     _set_compiler=0
     _set_flags=0
 
     if ! [ ${CXX} ]; then _set=1; CXX="g++"; fi
 
     # if no file return error
-    ${CXX} -std=c++2a -O3 -c -S ${@} ${CFLAGS} -o - -masm=intel | c++filt | grep -vE '\s+\.'
+    ${CXX} -std=c++2a -Ofast -c -S ${@} ${CFLAGS} -o - -masm=intel | c++filt | grep -vE '\s+\.'
 
     if [ ${_set_compiler} ]; then unset CXX; fi
     if [ ${_set_flags} ]; then unset CFLAGS; fi
