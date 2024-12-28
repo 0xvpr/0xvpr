@@ -11,9 +11,3 @@
 ![Lua](https://img.shields.io/badge/Lua-%2300599C?style=plastic&logo=lua&logoColor=white)
 ![x86_64-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastic&logo=Intel&logoColor=white)
 ![ARM-Assembly](https://img.shields.io/badge/ASM-%2300599C?style=plastic&logo=arm&logoColor=white)
-
-### Social
-<a href="https://discord.com/channels/0xvpr"
-   alt="discord">
- <img src="https://cdn3.emoji.gg/emojis/5244-discord.png"/>
-</a>
