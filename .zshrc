@@ -36,7 +36,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto        # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -225,3 +225,6 @@ set -o vi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add/enable X11 for wslg
+[[ -f /etc/wsl.conf && -e /mnt/wslg/.X11-unix/X0 && ! -e /tmp/.X11-unix/X0 ]] && mkdir -p /tmp/.X11-unix && ln -s /mnt/wslg/.X11-unix/X0 /tmp/.X11-unix/X0
