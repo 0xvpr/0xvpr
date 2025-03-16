@@ -36,11 +36,11 @@
 :set expandtab
 :set wildmenu
 :set nonumber
+:set nospell
 :set mouse=a
 :set secure
 :set hidden
 :set nowrap
-:set spell
 :set go+=a
 :set exrc
 

@@ -26,4 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# X11/wslg
+[[ -e /tmp/.X11-unix/X0 ]] || ln -sf /mnt/wslg/.X11-unix/X0 /tmp/.X11-unix/X0
+
 . "$HOME/.cargo/env"
