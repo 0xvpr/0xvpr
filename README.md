@@ -1,5 +1,5 @@
 ### Stats
-![stats](https://github-readme-stats.vercel.app/api?username=0xvpr&show_icons=true&theme=prussian&hide=contribs,issues)
+![stats](https://github-readme-stats.vercel.app/api?username=0xvpr&show_icons=true&theme=prussian&hide=contribs)
 ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xvpr&layout=compact&theme=prussian&langs_count=6&size_weight=0.3&count_weight=0.5&hide=Dockerfile,Makefile,Shell,CMake,Vim%20Script,PowerShell,CSS,HTML)
 
 ### Languages
