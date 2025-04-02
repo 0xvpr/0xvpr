@@ -1,5 +1,5 @@
-" Maintainer: Malik R. Booker
-" Last Change:	March 17, 2020
+" Creator:  VPR
+" Modified: March 21st, 2025
 
 set background=dark
 
@@ -12,57 +12,58 @@ endif
 let g:colors_name = "cooler"
 
 " Highlights current line
-hi CursorLine 		guibg=#18374F
+hi CursorLine       guibg=#18374F
 
 " Cursor's colour
-hi CursorColumn	 	guibg=#ffffff
-hi MatchParen 		guifg=#ffffff 	guibg=#439ea9 	gui=bold
-hi Pmenu 			guifg=#dfeff6 	guibg=#1E415E
-hi PmenuSel 		guifg=#dfeff6 	guibg=#2D7889
+hi CursorColumn     guibg=#FFFFFF
+hi MatchParen       guifg=#FFFFFF   guibg=#439EA9   gui=BOLD
+hi Pmenu            guifg=#DFEFF6   guibg=#1E415E
+hi PmenuSel         guifg=#DFEFF6   guibg=#2D7889
 
 " Search
-hi IncSearch  		gui=BOLD     	guifg=#E2DAEF   guibg=#AF81F4
-hi Search     		gui=NONE		guifg=#E2DAEF   guibg=#AF81F4
+hi IncSearch        gui=BOLD        guifg=#E2DAEF   guibg=#AF81F4
+hi Search           gui=NONE        guifg=#E2DAEF   guibg=#AF81F4
 
 
 " General colors
-hi Cursor 			guifg=NONE   	guibg=#55A096 	gui=none
-hi Normal 			guifg=#dfeff6	guibg=#102235	gui=NONE
+hi Cursor           guifg=NONE      guibg=#55A096   gui=NONE
+hi Normal           guifg=NONE      guibg=NONE      gui=NONE
 
 " e.g. tildes at the end of file
-hi NonText 			guifg=#96defa 	guibg=#122538 	gui=none
-hi LineNr 			guifg=#00D7D7 	guibg=#0C1926 	gui=none
+hi NonText          guifg=#1A8EFF   guibg=NONE      gui=NONE
+hi LineNr           guifg=#00D7D7   guibg=#0C1926   gui=NONE
 
-hi StatusLine 		guifg=#96defa 	guibg=#0C1926 	gui=italic
-hi StatusLineNC 	guifg=#68CEE8 	guibg=#0C1926  	gui=none
-hi VertSplit 		guifg=#1A3951 	guibg=#1A3951 	gui=none
-hi Folded 			guifg=#68CEE8 	guibg=#1A3951 	gui=none
-hi FoldColumn 	  	guifg=#1E415E 	guibg=#1A3951 	gui=none
-hi Title			guifg=#dfeff6 	guibg=NONE		gui=bold
+hi ColorColumn      guifg=#000000   guibg=#F842FF   gui=NONE
+hi StatusLine       guifg=#1A8EFF   guibg=#0C1926   gui=ITALIC
+hi StatusLineNC     guifg=#68CEE8   guibg=#0C1926   gui=NONE
+hi VertSplit        guifg=#1A3951   guibg=#1A3951   gui=NONE
+hi Folded           guifg=#68CEE8   guibg=#1A3951   gui=NONE
+hi FoldColumn       guifg=#1E415E   guibg=#1A3951   gui=NONE
+hi Title            guifg=#DFEFF6   guibg=NONE      gui=BOLD
 
  " Selected text color
-hi Visual			guifg=#dfeff6 	guibg=#24557A 	gui=none
-hi SpecialKey		guifg=#3e71a1 	guibg=#102235 	gui=none
+hi Visual           guifg=#DFEFF6   guibg=#24557A   gui=NONE
+hi SpecialKey       guifg=#1A8EFF   guibg=#102235   gui=NONE
 
 "
 " Syntax highlighting
 "
-hi Comment 			guifg=#3e71a1 	gui=italic
-hi Todo 			guifg=#ADED80 	guibg=#579929	gui=bold
-hi Constant 		guifg=#96defa 	gui=none
-hi String 			guifg=#89e14b 	gui=none
+hi Comment          guifg=#0286B6   gui=ITALIC
+hi Todo             guifg=#ADED80   guibg=#579929   gui=BOLD
+hi Constant         guifg=#1A8EFF   gui=NONE
+hi String           guifg=#F842FF   gui=NONE
 
-" Names of variables in PHP
-hi Identifier 		guifg=#8ac6f2	gui=none
+" Names of variables
+hi Identifier       guifg=#8AC6F2   gui=NONE
 
-" Ceclarations of type, e.g. int blah
-hi Type				guifg=#41B2EA	gui=bold
+" Declarations of type, e.g. int blah
+hi Type             guifg=#1A8EFF   gui=BOLD
 
 " Statement, such as 'hi' right here
-hi Statement 		guifg=#68CEE8 	gui=none
-hi Keyword			guifg=#8ac6f2 	gui=none
+hi Statement        guifg=#1A8EFF   gui=NONE
+hi Keyword          guifg=#1A8EFF   gui=NONE
 
-" Specified preprocessed words (like bold, italic etc. above)
-hi PreProc 			guifg=#EF6145 	gui=none
-hi Number			guifg=#96defa 	gui=none
-hi Special			guifg=#3e71a1 	gui=none
+" Specified preprocessed words (like BOLD, ITALIC etc. above)
+hi PreProc          guifg=#1A8EFF   gui=NONE
+hi Number           guifg=#1A8EFF   gui=NONE
+hi Special          guifg=#1A8EFF   gui=NONE

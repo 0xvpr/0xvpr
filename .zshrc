@@ -180,11 +180,11 @@ function findall {
 function mkcw {
     mkdir -p "$@"
     cd "$@"
-    cp ~/.utils/Makefile.c-mingw makefile
-    cp ~/.utils/compile_flags.txt.c-mingw compile_flags.txt
+    cp ~/.utils/makefile/Makefile.c-mingw makefile
+    cp ~/.utils/compile_flags/compile_flags.txt.c-mingw compile_flags.txt
 #   cp ~/.utils/Dockerfile.mingw32.ubuntu Dockerfile
-    mkdir -p src include
-    touch REAMDE.md CONTRIB.md src/main.c
+#   mkdir -p src include
+    touch REAMDE.md src/main.c
 }
 
 function godbolt {
@@ -194,7 +194,7 @@ function godbolt {
     if ! [ ${CXX} ]; then _set=1; CXX="g++"; fi
 
     # if no file return error
-    ${CXX} -std=c++2a -Ofast -c -S ${@} ${CFLAGS} -o - -masm=intel | c++filt | grep -vE '\s+\.'
+    ${CXX} -std=c++2b -Ofast -c -S ${@} ${CFLAGS} -o - -masm=intel | c++filt | grep -vE '\s+\.'
 
     if [ ${_set_compiler} ]; then unset CXX; fi
     if [ ${_set_flags} ]; then unset CFLAGS; fi

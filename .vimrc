@@ -1,6 +1,6 @@
 " Creator: VPR
 " Created: April 20th, 2020
-" Updated: June 21st, 2023
+" Updated: March 21st, 2025
 
 " Interpreter
 :let g:python3_host_prog='/usr/bin/env python3'
@@ -53,7 +53,7 @@
 
 " Appearance
 :syntax enable
-:color relaxed
+:color cooler
 
 " Airline theme
 if !exists('g:airline_symbols')
