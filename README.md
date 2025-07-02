@@ -1,4 +1,4 @@
-## Independent Researcher
+# Independent Security Researcher
 
 ### Stats
 ![stats](https://github-readme-stats.vercel.app/api?username=0xvpr&show_icons=true&theme=prussian&hide=contribs,issues)
