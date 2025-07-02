@@ -1,0 +1,8 @@
+-std=c99
+-Iinclude
+-Wall
+-Wextra
+-Werror
+-Wshadow
+-Wpedantic
+-Wconversion

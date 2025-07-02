@@ -1,0 +1,11 @@
+--target=x86_64-pc-windows-gnu
+-std=c++20
+-isystem/usr/lib/gcc/x86_64-w64-mingw32/10-posix/include/c++
+-isystem/usr/lib/gcc/x86_64-w64-mingw32/10-posix/include/c++/x86_64-w64-mingw32
+-Iinclude
+-Wall
+-Wextra
+-Werror
+-Wshadow
+-Wpedantic
+-Wconversion

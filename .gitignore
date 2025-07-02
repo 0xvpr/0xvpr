@@ -17,16 +17,28 @@
 !.vpr-env/.tmux.conf
 
 # Utilities
-!.utils/makefile/Makefile.c-mingw
-!.utils/makefile/Makefile.c-unix
+!.utils/
+!.utils/docker
+!.utils/docker/Dockerfile.mingw-cunit
+!.utils/makefile
 !.utils/makefile/Makefile.cpp-mingw
+!.utils/makefile/Makefile.c-unix
+!.utils/makefile/Makefile.c-mingw
 !.utils/makefile/Makefile.cpp-unix
-!.utils/compile_flags.txt.c-mingw
-!.utils/compile_flags/compile_flags.txt.c-mingw-driver
+!.utils/makefile/Makefile.docker-cmake-c
+!.utils/compile_flags
 !.utils/compile_flags/compile_flags.txt.c-unix
-!.utils/compile_flags/compile_flags.txt.cpp-mingw
 !.utils/compile_flags/compile_flags.txt.cpp-unix
-!.utils/wsl2-sshd.ps1
+!.utils/compile_flags/compile_flags.txt.cpp-mingw
+!.utils/compile_flags/compile_flags.txt.c-mingw
+!.utils/compile_flags/compile_flags.txt.c-mingw-driver
+!.utils/license
+!.utils/license/LICENSE.mit
+!.utils/license/LICENSE.ccbysa_4_0
+!.utils/cmake
+!.utils/cmake/CMakeLists.txt.top-level
+!.utils/cmake/mingw-toolchain.cmake
+!.utils/scripts
 
 # Vim
 !.config/nvim/init.vim

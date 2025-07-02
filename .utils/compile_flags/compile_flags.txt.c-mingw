@@ -1,0 +1,11 @@
+-std=c99
+--target=x86_64-pc-windows-gnu
+-isystem/usr/x86_64-w64-mingw32/include
+-isystem/usr/lib/gcc/x86_64-w64-mingw32/10-win32/include
+-Iinclude
+-Wall
+-Wextra
+-Werror
+-Wshadow
+-Wpedantic
+-Wconversion
