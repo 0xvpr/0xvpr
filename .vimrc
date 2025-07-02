@@ -1,6 +1,6 @@
 " Creator: VPR
 " Created: April 20th, 2020
-" Updated: March 21st, 2025
+" Updated: June 21st, 2023
 
 " Interpreter
 :let g:python3_host_prog='/usr/bin/env python3'
@@ -13,6 +13,7 @@
 :silent! inoremap {<CR> {<cr>}<esc>ko
 
 " Bindings
+:silent! noremap <F1> :CocCommand document.disableInlayHint<CR>
 :silent! noremap <Right> <Nop>
 :silent! noremap <Down>  <Nop>
 :silent! noremap <Left>  <Nop>
@@ -53,7 +54,7 @@
 
 " Appearance
 :syntax enable
-:color cooler
+:color relaxed
 
 " Airline theme
 if !exists('g:airline_symbols')
