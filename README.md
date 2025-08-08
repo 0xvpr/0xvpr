@@ -1,4 +1,4 @@
-### Independent Security Researcher
+### Independent Security Researcher & Consultant
 
 ---
 ### Stats
