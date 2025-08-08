@@ -38,10 +38,8 @@ set -o xtrace
     # Install pathogen
     if ! [[ -e ~/.vim/autoload/pathogen.vim ]] 
     then
-        (
-            mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-            curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-        )
+        mkdir -p ~/.vim/autoload ~/.vim/bundle
+        curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
     fi
 
     # Build and install COC
