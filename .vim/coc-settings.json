@@ -1,3 +1,11 @@
 {
-  "python.jediEnabled": true
+  "python.jediEnabled": true,
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.parameterTypes": false,
+  "pyright.inlayHints.enable": false,
+
+  "document.disableInlayHint": true,
+  "clangd.inlayHints.enable": false,
+  "inlayHint.enable": false
 }

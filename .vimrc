@@ -1,6 +1,6 @@
 " Creator: VPR
 " Created: April 20th, 2020
-" Updated: June 21st, 2023
+" Updated: August 27th, 2025
 
 " Interpreter
 :let g:python3_host_prog='/usr/bin/env python3'
@@ -45,7 +45,7 @@
 :set go+=a
 :set exrc
 
-:set path+=/usr/local/include
+":set path+=/usr/local/include
 :set path+=..
 :set path+=../..
 :set path+=../../..
@@ -121,3 +121,7 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+" Jump to next/prev diagnostic
+nmap <silent> <C-j> <Plug>(coc-diagnostic-next)
+nmap <silent> <C-k> <Plug>(coc-diagnostic-prev)

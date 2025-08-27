@@ -44,7 +44,7 @@
 !.config/nvim/init.vim
 !.vim/after/syntax/c/aethetics.vim
 !.vim/after/syntax/c/highlight_functions.vim
-!.vim/after/syntax/cpp/aethetics.vim
+!.vim/after/syntax/cpp/aesthetics.vim
 !.vim/after/syntax/cpp/highlight_functions.vim
 !.vim/autoload/pathogen.vim
 !.vim/bundle/coc.nvim
@@ -63,3 +63,5 @@
 !install/profile-setup.sh
 !install/standard-toolchain.sh
 !install/vim-setup.sh
+
+# TTP
