@@ -1,0 +1,40 @@
+#!/usr/bin/env bpftrace
+
+/**
+ * ssh_incoming_kprobe.bt
+ * Log incoming SSH connections when TCP enters ESTABLISHED via kprobe:tcp_set_state
+ *
+ * Requires: BTF (or matching kernel headers) so bpftrace can read struct sock fields.
+ * Scope:    IPv4 (reliable across kernels). IPv6 notes below.
+**/
+
+// TCP_ESTABLISHED == 1, AF_INET == 2 on Linux
+// We use literals to avoid relying on kernel headers for constants.
+
+kprobe:tcp_set_state
+/ arg1 == 1 /   // 1 == TCP_ESTABLISHED
+{
+  // cast arg0 to struct sock*
+  $sk = (struct sock *)arg0;
+
+  // family: 2 == AF_INET
+  $fam = $sk->__sk_common.skc_family;
+  if ($fam != 2) { exit(); }  // ignore non-IPv4 here
+
+  // IPv4 addrs (host order in skc_* fields for v4)
+  $sip = ntop($sk->__sk_common.skc_rcv_saddr);  // local/receiver (server) IP
+  $dip = ntop($sk->__sk_common.skc_daddr);      // remote (client) IP
+
+  // Ports:
+  //  - skc_num is local port (host order)
+  //  - skc_dport is remote port in network byte order -> shift right by 8 on little-endian
+  $sport = $sk->__sk_common.skc_num;               // server port (likely 22)
+  $dport = $sk->__sk_common.skc_dport >> 8;        // client source port
+
+  // Filter only if destination (local) port is 22
+  if ($sport != 22) { exit(); }
+
+  // Emit JSON line for SIEM/collector
+  printf("{\"ts\":\"%s\",\"event\":\"ssh_client_connect\",\"src\":\"%s:%d\",\"dst\":\"%s:%d\",\"pid\":%d,\"uid\":%d,\"comm\":\"%s\"}\n",
+         strftime("%FT%T%z", nsecs), $sip, $sport, $dip, $dport, pid, uid, comm);
+}

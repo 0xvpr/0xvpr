@@ -8,13 +8,13 @@
 !README.md
 
 # Shell / Tmux config
-!.vpr-env/.profile
-!.vpr-env/.bashrc
-!.vpr-env/.vimrc
-!.vpr-env/.radare2rc
-!.vpr-env/.zshrc
-!.vpr-env/.zshrc.minimal
-!.vpr-env/.tmux.conf
+!.profile
+!.bashrc
+!.vimrc
+!.radare2rc
+!.zshrc
+!.zshrc.minimal
+!.tmux.conf
 
 # Utilities
 !.utils/
@@ -56,12 +56,15 @@
 !.vim/colors/cooler.vim
 !.vim/colors/relaxed.vim
 
-# Setup scripts
-!install/vpr-setup.sh
-!install/arch-toolchain.sh
-!install/kali-toolchain.sh
-!install/profile-setup.sh
-!install/standard-toolchain.sh
-!install/vim-setup.sh
-
-# TTP
+# Scripts
+!scripts/
+!scripts/tracing/
+!scripts/tracing/ssh_incoming.bt
+!scripts/tracing/ssh_outgoing.bt
+!scripts/install/
+!scripts/install/vpr-setup.sh
+!scripts/install/arch-toolchain.sh
+!scripts/install/kali-toolchain.sh
+!scripts/install/profile-setup.sh
+!scripts/install/standard-toolchain.sh
+!scripts/install/vim-setup.sh
