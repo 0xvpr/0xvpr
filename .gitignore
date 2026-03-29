@@ -8,53 +8,34 @@
 !README.md
 
 # Shell / Tmux config
-!.profile
-!.bashrc
-!.vimrc
-!.radare2rc
-!.zshrc
-!.zshrc.minimal
-!.tmux.conf
-
-# Utilities
-!.utils/
-!.utils/docker
-!.utils/docker/Dockerfile.mingw-cunit
-!.utils/makefile
-!.utils/makefile/Makefile.cpp-mingw
-!.utils/makefile/Makefile.c-unix
-!.utils/makefile/Makefile.c-mingw
-!.utils/makefile/Makefile.cpp-unix
-!.utils/makefile/Makefile.docker-cmake-c
-!.utils/compile_flags
-!.utils/compile_flags/compile_flags.txt.c-unix
-!.utils/compile_flags/compile_flags.txt.cpp-unix
-!.utils/compile_flags/compile_flags.txt.cpp-mingw
-!.utils/compile_flags/compile_flags.txt.c-mingw
-!.utils/compile_flags/compile_flags.txt.c-mingw-driver
-!.utils/license
-!.utils/license/LICENSE.mit
-!.utils/license/LICENSE.ccbysa_4_0
-!.utils/cmake
-!.utils/cmake/CMakeLists.txt.top-level
-!.utils/cmake/mingw-toolchain.cmake
-!.utils/scripts
+!profile
+!bashrc
+!vimrc
+!radare2rc
+!tmux.conf
 
 # Vim
-!.config/nvim/init.vim
-!.vim/after/syntax/c/aethetics.vim
-!.vim/after/syntax/c/highlight_functions.vim
-!.vim/after/syntax/cpp/aesthetics.vim
-!.vim/after/syntax/cpp/highlight_functions.vim
-!.vim/autoload/pathogen.vim
-!.vim/bundle/coc.nvim
-!.vim/bundle/nerdcommenter
-!.vim/bundle/nerdtree
-!.vim/bundle/vim-airline
-!.vim/bundle/vim-airline-themes
-!.vim/coc-settings.json
-!.vim/colors/cooler.vim
-!.vim/colors/relaxed.vim
+!vim
+!vim/after
+!vim/after/syntax
+!vim/after/syntax/c
+!vim/after/syntax/c/aesthetics.vim
+!vim/after/syntax/c/highlight_functions.vim
+!vim/after/syntax/cpp
+!vim/after/syntax/cpp/aesthetics.vim
+!vim/after/syntax/cpp/highlight_functions.vim
+!vim/autoload
+!vim/autoload/pathogen.vim
+!vim/bundle
+!vim/bundle/coc.nvim
+!vim/bundle/nerdcommenter
+!vim/bundle/nerdtree
+!vim/bundle/vim-airline
+!vim/bundle/vim-airline-themes
+!vim/coc-settings.json
+!vim/colors
+!vim/colors/cooler.vim
+!vim/colors/relaxed.vim
 
 # Scripts
 !scripts/
@@ -62,9 +43,5 @@
 !scripts/tracing/ssh_incoming.bt
 !scripts/tracing/ssh_outgoing.bt
 !scripts/install/
-!scripts/install/vpr-setup.sh
-!scripts/install/arch-toolchain.sh
-!scripts/install/kali-toolchain.sh
 !scripts/install/profile-setup.sh
-!scripts/install/standard-toolchain.sh
 !scripts/install/vim-setup.sh
