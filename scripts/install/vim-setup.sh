@@ -4,7 +4,7 @@
 # Created:      December 7th, 2021
 
 # Updated by:   VPR
-# Updated:      September 10th, 2025
+# Updated:      March 29th, 2026
 
 
 set -o pipefail
@@ -19,19 +19,17 @@ set -o xtrace
 
     # Make a copy of the old vimrc with timestamp
     if ! [[ -f ~/.vimrc ]]; then
-        cp ~/.vimrc ~/.vimrc_`date '+%Y-%m-%d_%H-%M-%S'`
+        cp "${HOME}/.vimrc" "${HOME}/.vimrc_`date '+%Y-%m-%d_%H-%M-%S'`"
     fi
 
     # Initialize ~/.vim
     if ! [[ -d ~/.vim ]]; then
-        cp -r ~/.vim ~/.vim_`date '+%Y-%m-%d_%H-%M-%S'`
+        cp -r "${HOME}/.vim" "${HOME}~/.vim_`date '+%Y-%m-%d_%H-%M-%S'`"
     fi
 
     # Add and link nvim config to ~/.vimrc
-    mkdir -p ~/.config
-    [[ -d ~/.config ]] || cp -r ../../.config/nvim ~/.config/
-    [[ -d ~/.vim    ]] || cp -r ../../.vim/ ~/.vim/
-    [[ -e ~/.vimrc  ]] || cp -r ../../.vimrc ~/.vimrc
+    [[ -d "${HOME}/.vim"    ]] || cp -r ../../vim/ ~/.vim/
+    [[ -e "${HOME}/.vimrc"  ]] || cp -r ../../vimrc ~/.vimrc
 
     # Install pathogen
     if ! [[ -e ~/.vim/autoload/pathogen.vim ]]; then
