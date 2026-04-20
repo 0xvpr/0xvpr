@@ -8,12 +8,13 @@
 !README.md
 
 # Shell / Tmux config
-!profile
 !bashrc
-!vimrc
+!init.vim
+!profile
 !radare2rc
 !tmux.conf
-!init.vim
+!vimrc
+!vprc
 
 # Vim
 !vim
@@ -40,9 +41,9 @@
 
 # Scripts
 !scripts/
-!scripts/tracing/
-!scripts/tracing/ssh_incoming.bt
-!scripts/tracing/ssh_outgoing.bt
 !scripts/install/
 !scripts/install/profile-setup.sh
 !scripts/install/vim-setup.sh
+!scripts/tracing/
+!scripts/tracing/ssh_incoming.bt
+!scripts/tracing/ssh_outgoing.bt
