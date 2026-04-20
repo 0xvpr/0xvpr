@@ -18,18 +18,18 @@ set -o xtrace
     cd "${0%/*}"
 
     # Make a copy of the old vimrc with timestamp
-    if ! [[ -f ~/.vimrc ]]; then
+    if [[ -e ~/.vimrc ]]; then
         cp "${HOME}/.vimrc" "${HOME}/.vimrc_`date '+%Y-%m-%d_%H-%M-%S'`"
     fi
 
     # Initialize ~/.vim
-    if ! [[ -d ~/.vim ]]; then
-        cp -r "${HOME}/.vim" "${HOME}~/.vim_`date '+%Y-%m-%d_%H-%M-%S'`"
+    if [[ -e ~/.vim ]]; then
+        cp -r "${HOME}/.vim" "${HOME}/.vim_`date '+%Y-%m-%d_%H-%M-%S'`"
     fi
 
     # Add and link nvim config to ~/.vimrc
+    [[ -e "${HOME}/.vimrc"  ]] || cp    ../../vimrc ~/.vimrc
     [[ -d "${HOME}/.vim"    ]] || cp -r ../../vim/ ~/.vim/
-    [[ -e "${HOME}/.vimrc"  ]] || cp -r ../../vimrc ~/.vimrc
 
     # Install pathogen
     if ! [[ -e ~/.vim/autoload/pathogen.vim ]]; then
